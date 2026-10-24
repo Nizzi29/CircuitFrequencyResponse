@@ -1,6 +1,10 @@
 # KI-generierte Tests (Version mit Labels, aufrechte Indizes)
 # Bezeichnungen wie im Versuchsskript: R_m, R_Ls, R_d, L_r/C_r (Reihenkreis), L_p/C_p (Parallelkreis)
 
+import numpy as np
+import matplotlib.pyplot as plt
+
+from CircuitFrequencyResponse import *
 
 # 1. Kontrollwerte (das Label darf die Rechnung nicht beeinflussen)
 

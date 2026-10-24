@@ -31,8 +31,8 @@ class FrequencyResponse(ABC):
         symbol: Formelzeichen der komplexen Größe
         unit: Einheit der komplexen Größe
         """
-        if unit == '':
-            ylabel = f'|{symbol}(f)|'
+        if unit == '' and dB == True:
+            ylabel = f'|{symbol}(f)| in dB'
         elif dB == True:
             ylabel = f'|{symbol}(f)| in dB{unit}'
         else:
