@@ -184,7 +184,7 @@ class ParallelImpedance(CompositeImpedance):
 
 
 class VoltageDivider(FrequencyResponse):
-    def __init__(self, divider_name, Z_1: Impedance(), Z_2: Impedance()):
+    def __init__(self, divider_name, Z_1: Impedance, Z_2: Impedance):
         """
         Z_1: Erste Impedanz – Über sie fällt ein Teil der Eingangsspannung ab
         Z_2: Zweite Impedanz – Hier liegt die Ausgansspannung an
